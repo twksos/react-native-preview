@@ -1,0 +1,31 @@
+{
+  "name": "react-native-preview",
+  "version": "0.2.0",
+  "description": "React Native Preview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twksos/react-native-preview.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "preview"
+  ],
+  "author": "Guangcheng Wei <twksos@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twksos/react-native-preview/issues"
+  },
+  "homepage": "https://github.com/twksos/react-native-preview#readme",
+  "peerDependencies": {
+    "react-native": ">=0.26.0"
+  },
+  "devDependencies": {
+    "react-native": ">=0.26.0"
+  }
+}
