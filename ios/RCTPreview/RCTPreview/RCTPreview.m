@@ -31,9 +31,11 @@ RCT_EXPORT_METHOD(preview:(NSString *)fileURL resolver:(RCTPromiseResolveBlock)r
     qlVc.view.userInteractionEnabled = YES;
     UIViewController *root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
 //        qlVc.view.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
-    [root presentViewController:qlVc animated:YES completion:^{
-        resolve(fileURL);
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [root presentViewController:qlVc animated:YES completion:^{
+            resolve(fileURL);
+        }];
+    });
 }
 
 #pragma mark - QLPreviewController 代理方法
